@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Komal Narayan | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    z-index:1000;
+}
+
+nav a{
+    margin-left:20px;
+    color:#ddd;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero img{
+    width:140px;
+    border-radius:50%;
+    border:3px solid #00e5ff;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:2.8em;
+}
+
+.hero span{
+    color:#00e5ff;
+}
+
+.hero p{
+    color:#ccc;
+    margin:10px 0;
+}
+
+.btn{
+    margin:10px;
+    padding:10px 25px;
+    border-radius:25px;
+    background:#00e5ff;
+    color:#000;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#00bcd4;
+}
+
+/* SECTION */
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#00e5ff;
+}
+
+/* SKILLS */
+.skill{
+    margin:15px 0;
+}
+
+.progress{
+    height:8px;
+    background:#333;
+    border-radius:10px;
+}
+
+.progress div{
+    height:100%;
+    background:#00e5ff;
+}
+
+/* PROJECT LINKS */
+.project-links a{
+    display:inline-block;
+    margin-top:10px;
+    margin-right:10px;
+    font-size:14px;
+    color:#00e5ff;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    color:#ccc;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h3>Komal</h3>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="C:\Users\my pc\Desktop\komal.jpg">
+    <h1>Hi, I'm <span>Komal</span></h1>
+    <p>B.Sc Computer Science | Web Developer | Cloud Learner</p>
+
+    <a href="C:\Users\my pc\Desktop\Komal.cv.pdf"C:\Users\my pc\Desktop\Komal.cv.pdf" class="btn">Download CV</a>
+    <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<h2>About</h2>
+
+<div class="card">
+<p>
+Focused on building modern web applications with clean UI and efficient performance.
+Currently exploring cloud technologies and AI-based solutions while continuously improving development skills.
+</p>
+
+<p style="margin-top:10px; color:#ccc;">
+Interested in creating scalable systems and working on real-world impactful projects.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="container">
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>❤️ Heart Disease Detection</h3>
+<p>ML & DL model to predict heart disease risk.</p>
+<p><strong>Tech:</strong> Python, ML, Deep Learning</p>
+<div class="project-links">
+<a href="#">GitHub</a>
+<a href="#">Live</a>
+</div>
+</div>
+
+<div class="card">
+<h3>🔐 File Integrity Checker</h3>
+<p>Detects file changes using hashing.</p>
+<p><strong>Tech:</strong> C++</p>
+<div class="project-links">
+<a href="#">GitHub</a>
+</div>
+</div>
+
+<div class="card">
+<h3>🌐 Portfolio Website</h3>
+<p>Responsive portfolio using HTML & CSS.</p>
+<p><strong>Tech:</strong> HTML, CSS</p>
+<div class="project-links">
+<a href="#">GitHub</a>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<div class="container">
+<h2>Skills</h2>
+
+<div class="card">
+
+<div class="skill">HTML
+<div class="progress"><div style="width:90%"></div></div>
+</div>
+
+<div class="skill">CSS
+<div class="progress"><div style="width:85%"></div></div>
+</div>
+
+<div class="skill">Python
+<div class="progress"><div style="width:75%"></div></div>
+</div>
+
+<div class="skill">Cloud (Azure Basics)
+<div class="progress"><div style="width:60%"></div></div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+<div class="container">
+<h2>Hobbies</h2>
+
+<div class="grid">
+<div class="card">📚 Reading & Learning</div>
+<div class="card">💻 Exploring Tech</div>
+<div class="card">🎨 UI Designing</div>
+<div class="card">🎧 Music</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>Email: komal@example.com</p>
+<p>Phone: +91 987*******</p>
+<p>GitHub | LinkedIn</p>
+</section>
+
+<footer>
+<p>© 2026 Komal Narayan</p>
+</footer>
+
+</body>
+</html>
